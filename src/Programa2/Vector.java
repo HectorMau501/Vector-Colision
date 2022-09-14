@@ -21,6 +21,8 @@ public class Vector
         int numero = 1; //Esta sirve para comprobar que todos sean 1 en los if
         
         int cifra1, cifra2, cifra3; 
+        
+        int opcion = 0;
 
        
         
@@ -31,6 +33,8 @@ public class Vector
         System.out.println("\t\tPrograma para el calculo del Vector resultante a travez del Vector Colision");
         
 
+        while(opcion == 0)
+        {
             System.out.println("\n\tIngrese las cifras a partir de derecha a izquierda.");
             System.out.println("Ingrese el numero 1: ");
             numeroIni1=entrada.nextInt();
@@ -53,7 +57,7 @@ public class Vector
             
             if(numeroIni1 == 0)
             {
-                    for(int i=1;i<5;i++)
+                    for(int i=1;i<3;i++)
                 {
                     System.out.println("Desarrollo de la cifra 1: ");
                     System.out.println("Paso "+i+"\n"+numeroIni3+""+numeroIni2+""+numeroIni1);
@@ -92,7 +96,7 @@ public class Vector
             //PARA LA SEGUNDA CIFRA
             if(newNumero2 == 0)
             {
-                for(int i=1 ; i<5; i++)
+                for(int i=1 ; i<3; i++)
                 {
                     System.out.println("Desarrollo de la cifra 2: ");
                     System.out.println("Paso "+i+"\n"+newNumero3+""+newNumero2+""+newNumero1);
@@ -128,8 +132,11 @@ public class Vector
             
             
             System.out.println("\n\n");
+            
+            System.out.println("Desea realizar otra vez la accion ponga el numero 0 sino cualquier otro numero");
+            opcion = entrada.nextInt();
            
-      
+        }    
     } 
 }
 
